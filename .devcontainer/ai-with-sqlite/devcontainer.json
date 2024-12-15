@@ -5,5 +5,14 @@
         "ghcr.io/devcontainers/features/git:1": {
             "version": "latest"
         }
-    }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ]
+        }
+    },
+    "workspaceFolder": "/workspace/AI-for-database/ai-with-sqlite"
 }
