@@ -14,5 +14,5 @@
             ]
         }
     },
-    "postCreateCommand": "pip install -U 'google-generativeai>=0.8.3' python-dotenv ipykernel --root-user-action ignore && cp .env.example .env"
+    "postCreateCommand": "pip install -U 'google-generativeai>=0.8.3' python-dotenv ipykernel ipython-sql --root-user-action ignore && cp .env.example .env"
 }
