@@ -15,9 +15,10 @@
         "vscode": {
             "extensions": [
                 "ms-toolsai.jupyter",
-                "ms-python.python"
+                "ms-python.python",
+                "ms-ossdata.vscode-postgresql"
             ]
         }
     },
-    "postCreateCommand": "pip install -U 'google-generativeai>=0.8.3' python-dotenv ipykernel psycopg2 --root-user-action ignore && cp .env.example .env"
+    "postCreateCommand": "pip install -U 'google-generativeai>=0.8.3' python-dotenv ipykernel psycopg2 --root-user-action ignore && cp .env.example .env && curl -LO https://github.com/morenoh149/postgresDBSamples/raw/refs/heads/master/chinook-1.4/Chinook_PostgreSql_utf8.sql && apt update && apt -y install postgresql-client && PGPASSWORD='password' psql -h db -p 5432 -U user -d sampledb -f Chinook_PostgreSql_utf8.sql"
 }
