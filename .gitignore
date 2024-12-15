@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 ai-with-sqlite/sample.db
 Chinook_PostgreSql_utf8.sql
+*.gz
