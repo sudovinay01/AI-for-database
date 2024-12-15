@@ -1,0 +1,9 @@
+{
+    "name": "AI with SQLite",
+    "image": "python:3.13.1",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest"
+        }
+    }
+}
