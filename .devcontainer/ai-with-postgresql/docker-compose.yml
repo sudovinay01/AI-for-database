@@ -16,7 +16,7 @@ services:
     command: sleep infinity
 
   db:
-    image: postgres:13
+    image: postgres:17.2-alpine
     container_name: postgres-container
     environment:
       POSTGRES_USER: user
