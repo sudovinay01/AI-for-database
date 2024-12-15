@@ -1,0 +1,23 @@
+{
+    "name": "AI with PostgreSQL",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "python",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install -U 'google-generativeai>=0.8.3' python-dotenv ipykernel psycopg2 --root-user-action ignore && cp .env.example .env"
+}
