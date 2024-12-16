@@ -2,9 +2,9 @@
 Using google AI api to make a app which can take user prompt and using AI to conver it into query to provided output.
 # Setup
 ## Pre-requirements
-- VS code with dev container
+- VS code with dev container extension 
 - Docker
-- Google Ai api key for https://aistudio.google.com/app/apikey
+- Google AI api key from https://aistudio.google.com/app/apikey
 ## Setup notebook
 - Clone repo and open in VS code
 - In command pallet select `Dev Containers: Reopen in Container`
